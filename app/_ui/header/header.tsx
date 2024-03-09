@@ -14,7 +14,7 @@ function Header() {
   const routes = useRoutes();
 
   return (
-    <div className="w-full flex items-center justify-between">
+    <div className="w-full flex items-center justify-between pt-14 pb-44">
       <Logo />
       <nav className="flex flex-row gap-11">
         {routes.map((item) => (
