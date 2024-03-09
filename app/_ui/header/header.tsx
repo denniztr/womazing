@@ -11,8 +11,8 @@ function Header() {
   const routes = useRoutes();
 
   return (
-    <div>
-      <nav className="flex flex-row gap-10">
+    <div className="w-full">
+      <nav className="w-full flex flex-row">
         {routes.map((item) => (
           <Link
             key={item.href}
