@@ -28,12 +28,6 @@ const useRoutes = () => {
         href: '/contacts',
         active: pathname === '/contacts',
       },
-      {
-        label: 'Корзина',
-        href: '/cart',
-        icon: '/public/icons/shopping.svg',
-        active: pathname === '/cart',
-      },
     ],
     [pathname]
   );
