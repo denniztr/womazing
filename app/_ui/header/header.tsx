@@ -14,7 +14,7 @@ function Header() {
   const routes = useRoutes();
 
   return (
-    <div className="w-full flex items-center justify-between pt-14 pb-44">
+    <div className="w-full flex items-center justify-between pt-14">
       <Logo />
       <nav className="flex flex-row gap-11">
         {routes.map((item) => (
@@ -23,7 +23,7 @@ function Header() {
             href={item.href}
             className={clsx(
               `text-sm tracking-wider font-normal`,
-              item.active && 'text-green-700/60 font-bold'
+              item.active && 'text-primary font-semibold'
             )}
           >
             {item.label}
