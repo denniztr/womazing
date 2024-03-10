@@ -6,7 +6,7 @@ export default async function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="h-screen md:px-60 px-20">
+    <div className="h-screen md:px-20 xl:px-40 px-8 ">
       <Header />
       {children}
     </div>

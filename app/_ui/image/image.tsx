@@ -3,7 +3,7 @@ import Image from 'next/image';
 interface PrimaryImageProps {
   src: string;
   alt: string;
-  className: string;
+  className?: string;
 }
 
 const PrimaryImage: React.FC<PrimaryImageProps> = ({ src, alt, className }) => {

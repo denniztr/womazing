@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import clsx from 'clsx';
 
-import useRoutes from '@/app/hooks/use-routes';
+import useRoutes from '@/app/_hooks/use-routes';
 
 import Logo from '../logo/logo';
 import Contact from '../contact/contact';

@@ -1,10 +1,12 @@
 import PrimaryButton from '@/app/_ui/button/button';
+import PrimaryImage from '@/app/_ui/image/image';
 import EmptyState from '@/app/_ui/empty-state';
+import Card from '@/app/_ui/card/card';
 
 export default function Home() {
   return (
-    <div className="h-full">
-      <section className="h-[620px]">
+    <>
+      <section className="h-[620px] ">
         <EmptyState />
         <div className="w-1/2 h-full flex items-center">
           <div className="max-w-[490px]">
@@ -16,6 +18,7 @@ export default function Home() {
               этом сезоне. Время исследовать.
             </p>
             <div className="flex items-center justify-center">
+              <div className="py-4 px-6 bg-primary/20">&#8595;</div>
               <PrimaryButton
                 className="bg-primary rounded-none py-5 px-12 tracking-wide font-normal"
                 variant="filled"
@@ -26,7 +29,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div>next article</div>
-    </div>
+      <section className="pt-32 pb-32">
+        <h2 className="pb-16 font-[500] text-3xl tracking-wide">
+          Новая коллекция
+        </h2>
+      </section>
+    </>
   );
 }
