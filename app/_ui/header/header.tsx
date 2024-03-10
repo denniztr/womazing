@@ -14,7 +14,7 @@ function Header() {
   const routes = useRoutes();
 
   return (
-    <div className="w-full flex items-center justify-between pt-14">
+    <div className="flex items-center justify-between pt-14">
       <Logo />
       <nav className="flex flex-row gap-11">
         {routes.map((item) => (
@@ -30,7 +30,7 @@ function Header() {
           </Link>
         ))}
       </nav>
-      <div className="flex flex-row">
+      <div className="flex">
         <Contact />
         <div className="w-5 h-5 relative">
           <Link href="/cart">
