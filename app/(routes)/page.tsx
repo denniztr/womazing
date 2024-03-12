@@ -18,7 +18,9 @@ export default function Home() {
               этом сезоне. Время исследовать.
             </p>
             <div className="flex items-center justify-center">
-              <div className="py-4 px-6 bg-primary/20">&#8595;</div>
+              <div className="py-4 px-6 bg-primary/20 text-primary cursor-pointer">
+                &#8595;
+              </div>
               <PrimaryButton
                 className="bg-primary rounded-none py-5 px-12 tracking-wide font-normal"
                 variant="filled"
@@ -33,6 +35,21 @@ export default function Home() {
         <h2 className="pb-16 font-[500] text-3xl tracking-wide">
           Новая коллекция
         </h2>
+        <div className="flex flex-col items-center gap-16">
+          <div className="flex flex-row gap-12">
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <div>
+            <PrimaryButton
+              className="border border-primary text-primary rounded-none py-5 px-12 tracking-wide font-normal"
+              variant="outlined"
+            >
+              Открыть магазин
+            </PrimaryButton>
+          </div>
+        </div>
       </section>
     </>
   );
