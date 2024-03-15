@@ -2,14 +2,14 @@
 
 import PrimaryImage from '../image/image';
 
-const Card = () => {
+const Card = ({ src, title }) => {
   return (
-    <div className="h-[530px] w-[350px]">
+    <div className="h-[450px] w-[315px]">
       <div className="h-[478px] relative">
-        <PrimaryImage src="/itemPic.png" alt="Item" />
+        <PrimaryImage src={src} alt="Item" />
       </div>
       <div className="text-center font-[500]">
-        <h4 className="text-xl pt-6 pb-2">Футболка USA</h4>
+        <h4 className="text-xl pt-6 pb-2">{title}</h4>
         <p className="text-additional text-base">$129</p>
       </div>
     </div>
