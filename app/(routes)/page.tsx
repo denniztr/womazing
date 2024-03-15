@@ -35,11 +35,12 @@ export default function Home() {
         <h2 className="pb-16 font-[500] text-3xl tracking-wide">
           Новая коллекция
         </h2>
-        <div className="flex flex-col items-center gap-16">
-          <div className="flex flex-row gap-12">
-            <Card />
-            <Card />
-            <Card />
+        <div className="flex flex-col items-center gap-40">
+          <div className="flex flex-row gap-10">
+            <Card src="/3rdItemPic.png" title="Свитшот Sweet Shot" />
+            <Card src="/2ndItemPic.png" title="Купальник Glow" />
+            <Card src="/ItemPic.png" title="Футболка USA" />
+            <Card src="/2ndItemPic.png" title="Купальник Glow" />
           </div>
           <div>
             <PrimaryButton
